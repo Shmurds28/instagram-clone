@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  color: #262626;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  background-color: #fafafa;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app .badge{
+  margin: 0 7px;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon{
+  cursor: pointer;
+}
+
+.app a{
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+.app a:hover{
+  text-decoration: underline;
+}
+
+.insta-body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top:100px;
 }
 
-.App-link {
-  color: #61dafb;
+.posts{
+  padding-left: 110px;
+  margin-top: 0px;
+  margin-left: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app_header{
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  display: flex;
+  padding-right: 300px;
+  position: fixed;
+  width:80%;
+  margin-bottom: 50px;
+  top:0;
+  z-index: 50;
+}
+
+.app_header .icon{  
+  margin: 0 7px;
+}
+
+.app_header .icon.send{
+  margin: 0;
+  padding: 0;
+}
+
+.app_header div:last-of-type{
+  margin-left: auto;
+  display: flex;
+}
+
+/* Suggestions */
+.suggestions{
+  margin-top: 30px;
+  margin-left: 20px;
+  /* position: fixed; */
+}
+
+.profile, .account{
+  display: flex;
+  width: 100%;
+}
+
+.profile_avatar{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.profile .user, .account .user{
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+.profile .user h4, .account .user h4{
+  font-size:14px;
+}
+
+.profile .user p{
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.switch-button{
+  float:right;
+  margin-left: auto;
+}
+
+.switch-button h4{
+  color: #0095f6;
+  font-size:12px;
+  line-height:14px;
+}
+.suggested-header{
+  display: flex;
+  justify-content: space-between;  
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.suggested-header h4{
+  color: #8e8e8e;
+  
+}
+
+.suggested-accounts{
+  margin-top: 30px;
+}
+.suggested-accounts .user p{
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.suggested-accounts .account{
+  margin-bottom: 10px;
+}
+
+.avatar{
+  cursor: pointer;
 }

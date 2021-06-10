@@ -1,0 +1,143 @@
+.post{
+    background-color: white;
+    max-width: 500px;
+    border: 1px solid lightgray;
+    margin-bottom: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.post_image{
+  width:100%;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.post_text{
+    font-weight: normal;
+    padding: 10px;
+    padding-top: 0;
+    font-size: 14px;
+}
+.post_header{
+    display:flex;
+    align-items:center;
+    padding: 10px;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 600;
+    width:95%;
+}
+
+.post_avatar{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post-icons .icon, .add-comment .icon{  
+    margin: 0 5px;
+}
+/* 
+.icon.send{
+    transform: rotate(330deg);
+} */
+
+.icon.bookmark, .comment-like {
+    float: right; 
+}
+
+.icon.options{
+    margin-left: auto;
+}
+
+.comments, .post-time, .add-comment .add-comment-text, .post-likes{
+    font-weight: normal;
+    padding: 10px;
+    padding-top: 0;
+    font-size: 14px;
+}
+
+.comments .view-comments{
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.post-time{
+    color: #8e8e8e;
+    font-size: 10px;
+}
+
+.add-comment-form{
+    display: flex;
+    margin-top:10px;
+
+}
+
+.add-comment{
+    border-top: 1px solid lightgray;
+}
+
+.add-comment-form textarea{
+    border: none;
+    margin-left: 10px;
+    resize:none;
+    outline: none;
+    height: 100%;
+}
+
+.add-comment-form div:last-of-type{
+    margin-left: auto;
+}
+
+.add-comment-form div:nth-child(2){
+    padding-right: auto;
+}
+
+.add-comment-form .comment-button{
+    color: #0095f6;
+    font-size: 14px;
+    font-weight:600;
+    background-color:white;
+    border:none;
+    cursor: pointer;
+}
+
+.add-comment-form textarea,
+:-ms-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+::-webkit-input-placeholder {
+    color: #262626;
+    font-size: 4px;
+    font-family: inherit;
+}
+
+.add-comment::-webkit-input-placeholder {
+    text-align: center;
+}
+.add-comment:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+}
+.add-comment::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+}
+.add-comment:-ms-input-placeholder {
+    text-align: center;
+}
+
+.post-likes{
+    display: flex;
+    align-items: center;
+}
+
+.post a{
+    text-decoration:none;
+    color: inherit;
+    font-size: inherit;
+}
+
+.post a:hover{
+    text-decoration:underline;
+}
