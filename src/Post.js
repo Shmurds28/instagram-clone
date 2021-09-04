@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import { Link, Router } from 'react-router-dom';
+import ScriptTag from 'react-script-tag';
 import './Post.css';
 import Avatar from '@material-ui/core/Avatar';
 import { makeStyles } from '@material-ui/core/styles';
@@ -32,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Post({username, caption, imageUrl}) {
     const classes = useStyles();
+    
     return (
        <Fragment>
             <div className="post">
@@ -67,7 +69,14 @@ function Post({username, caption, imageUrl}) {
             <p className="post_text"><strong><a href="#">{username}</a></strong> {caption}</p>
 
             <div className="comments">
-                <p className="view-comments"><a href="#">View all 21 comments</a></p>
+                <p className="view-comments" id="viewComments"><a>View all 21 comments</a></p>
+                <div className="all-comments" id="allComments">
+                    <span className="close">&times;</span>
+                    <div className="content">    
+                        <p>All comments</p>
+                    </div>
+                    
+                </div>
                 <p><strong><a href="#">user123</a></strong> Oh nice <BiHeart size={10} className="icon comment-like"/></p>
                 <p><strong><a href="#">lexi_</a></strong>  fire imojis <BiHeart size={10} className="icon comment-like"/></p>
             </div>
@@ -95,9 +104,12 @@ function Post({username, caption, imageUrl}) {
             
         </div>
       
+        <ScriptTag type="text/javascript" src="./modal" />
        </Fragment>
         
-    )
+    );
+
+    
 }
 
 export default Post;
